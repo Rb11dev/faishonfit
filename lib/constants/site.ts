@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Fit for the world you're building",
   description:
     "FaishonFit is a fashion house for people in motion — considered tailoring, technical fabrics, and silhouettes cut for the studio, the street, and everything after.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://faishonfit.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://faishonfit.com",
 };
 
 export const MAIN_NAV = [
