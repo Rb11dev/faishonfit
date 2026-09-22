@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 24% 96%;
+    --foreground: 220 8% 4%;
+    --card: 40 24% 96%;
+    --card-foreground: 220 8% 4%;
+    --popover: 40 24% 96%;
+    --popover-foreground: 220 8% 4%;
+    --primary: 220 8% 4%;
+    --primary-foreground: 40 24% 96%;
+    --secondary: 36 20% 90%;
+    --secondary-foreground: 220 8% 4%;
+    --muted: 36 14% 88%;
+    --muted-foreground: 220 4% 40%;
+    --accent: 39 45% 57%;
+    --accent-foreground: 220 8% 4%;
+    --destructive: 12 55% 34%;
+    --destructive-foreground: 40 24% 96%;
+    --border: 220 6% 12%;
+    --input: 220 6% 85%;
+    --ring: 39 45% 57%;
+    --radius: 0px;
+  }
+
+  .dark {
+    --background: 220 8% 4%;
+    --foreground: 40 24% 96%;
+    --card: 220 8% 6%;
+    --card-foreground: 40 24% 96%;
+    --popover: 220 8% 6%;
+    --popover-foreground: 40 24% 96%;
+    --primary: 40 24% 96%;
+    --primary-foreground: 220 8% 4%;
+    --secondary: 220 6% 12%;
+    --secondary-foreground: 40 24% 96%;
+    --muted: 220 6% 14%;
+    --muted-foreground: 220 4% 65%;
+    --accent: 39 45% 57%;
+    --accent-foreground: 220 8% 4%;
+    --border: 40 24% 90%;
+    --input: 220 6% 20%;
+    --ring: 39 45% 57%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bone text-void font-body antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  ::selection {
+    @apply bg-champagne text-void;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-1 ring-champagne ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
