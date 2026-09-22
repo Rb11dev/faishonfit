@@ -45,7 +45,7 @@ export const FOOTER_LINKS = {
 } as const;
 
 export const SOCIAL_LINKS = [
-  { label: "Instagram", href: "https://instagram.com/faishonfit" },
+  { label: "Instagram", href: "https://www.instagram.com/faishonfit.in?stkn=aHkwdGR4Z3RiZHh5" },
   { label: "TikTok", href: "https://tiktok.com/@faishonfit" },
   { label: "Pinterest", href: "https://pinterest.com/faishonfit" },
   { label: "X", href: "https://x.com/faishonfit" },
